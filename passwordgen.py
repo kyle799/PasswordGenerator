@@ -1,12 +1,14 @@
 import random as r
 from random import shuffle
 from sys import argv
+import datetime as dt
 numbs = "1234567890"
 lower = "qwertyuiopasdfghjklzxcvbnm"
 special = ",.!@#$%^&*()<>"
 uppers = "QWERTYUIOPASDFGHJKLZXCVBNM"
 chars = numbs + lower + special + uppers
-a = argv[2]
+start = dt.datetime.now()
+a = argv[1]
 a = int(a)
 def main():
     global new_password
@@ -41,3 +43,4 @@ def main():
     print(new_password)
 if __name__ == "__main__":
     main()
+print(dt.datetime.now() - start)
