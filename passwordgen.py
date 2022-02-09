@@ -34,12 +34,12 @@ def main():
         elif incrementer < a:
             incrementer += 1
             get_char(chars)
-    def shuffle_word(new_password):
+    def shuffle_password(new_password):
         new_password = list(new_password)
         shuffle(new_password)
         return ''.join(new_password)
     for i in range(10):
-        new_password = shuffle_word(new_password)
+        new_password = shuffle_password(new_password)
     print(new_password)
 
 if __name__ == "__main__":
