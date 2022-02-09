@@ -6,11 +6,8 @@ lower = "qwertyuiopasdfghjklzxcvbnm"
 special = ",.!@#$%^&*()<>"
 uppers = "QWERTYUIOPASDFGHJKLZXCVBNM"
 chars = numbs + lower + special + uppers
-if argv[2] = 0:
 a = argv[2]
-print(a)
 a = int(a)
-
 def main():
     global new_password
     new_password = ""
@@ -42,6 +39,5 @@ def main():
     for i in range(10):
         new_password = shuffle_password(new_password)
     print(new_password)
-
 if __name__ == "__main__":
     main()
