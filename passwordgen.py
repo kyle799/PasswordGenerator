@@ -6,8 +6,9 @@ lower = "qwertyuiopasdfghjklzxcvbnm"
 special = ",.!@#$%^&*()<>"
 uppers = "QWERTYUIOPASDFGHJKLZXCVBNM"
 chars = numbs + lower + special + uppers
-argv 
-a = argv[1]
+if argv[2] = 0:
+a = argv[2]
+print(a)
 a = int(a)
 
 def main():
