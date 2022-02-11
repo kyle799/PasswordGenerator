@@ -8,11 +8,12 @@ special = ",.!@#$%^&*()<>"
 uppers = "QWERTYUIOPASDFGHJKLZXCVBNM"
 chars = numbs + lower + special + uppers
 start = dt.datetime.now()
-a = argv[1]
+a = input("How long should your password be? ")
 a = int(a)
 if a < 8:
     print("The password should be at least 8 characters for this script to properly work.")
     exit()
+
 def main():
     global new_password
     new_password = ""
